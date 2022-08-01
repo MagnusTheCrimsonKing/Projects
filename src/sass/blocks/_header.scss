@@ -1,0 +1,29 @@
+.header{
+    min-height: 85px;
+    padding: 19px 0 19px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        &-descr {
+            color: #242424;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            span {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            a {
+                text-decoration: none;
+                color: #242424;
+            }
+        }
+        &-icon {
+            margin-right: 11px;
+        }
+        
+    }
+}

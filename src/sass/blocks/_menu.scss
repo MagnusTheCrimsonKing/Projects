@@ -1,0 +1,34 @@
+.menu {
+    min-height: 700px;
+    background: url(../img/menu/bg_menu.jpg) center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        margin-top: 39px;
+    }
+    &__nav {
+        margin-top: 64px;
+        :nth-child(5) {
+            margin-right: 0;
+            margin-left: 22px;
+        }
+        :nth-child(1) {
+            margin-right: 22px;
+            margin-left: 0;
+        }
+        &-item {
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 0 22px 0 22px;
+        } 
+        a:hover {
+                color: #ffffff;
+            }
+    }
+}
