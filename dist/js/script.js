@@ -15,3 +15,13 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+$(document).ready(function(){
+    $('.menu__inner').slick({
+        arrows: true,
+        dots: true,
+        speed: 1200,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/menu/arrow-left.png"></img></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/menu/arrow-right.png"></img></button>',
+        Infinity: true
+    });
+  });

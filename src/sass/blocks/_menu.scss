@@ -10,7 +10,7 @@
         margin-top: 39px;
     }
     &__nav {
-        margin-top: 64px;
+        margin-top: 25px;
         :nth-child(5) {
             margin-right: 0;
             margin-left: 22px;
@@ -28,7 +28,94 @@
             margin: 0 22px 0 22px;
         } 
         a:hover {
-                color: #ffffff;
+            color: #ffffff;
             }
     }
+    &__inner {
+        position: relative;
+        margin-top: 27px;
+        min-height: 490px;
+        .slick-dots {
+            position: absolute;
+            bottom: 53px;
+            left: 50%;
+            transform: translateX(-50%);
+            li {
+                list-style-type: none;
+            }
+            button {
+                font-size: 0;
+                width: 11px;
+                height: 11px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                margin: 0 2px;
+                background: transparent;
+                cursor: pointer;
+            }
+            .slick-active {
+                button {
+                    background-color: #fff;
+                }
+            }
+        }
+        
+        .slick-prev, .slick-next {
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            bottom: 64px;
+            z-index: 1000;
+        }
+        .slick-prev {
+            left: 45.5%;
+        }
+        .slick-next {
+            right: 45.5%;
+        }
+    }
+    &__title {
+        margin: 0;
+        margin-top: 106px;
+        max-width: 534px;
+        font-size: 42px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 48px;
+        text-align: left;
+    }
+    &__subtitle {
+        margin: 0;
+        margin-top: 27px;
+        max-width: 426px;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: left;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__btn {
+        width: 241px;
+        height: 60px;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+        background-color: $main-color;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 39px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: space-between;
 }
