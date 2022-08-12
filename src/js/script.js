@@ -25,3 +25,22 @@ $(document).ready(function(){
         Infinity: true
     });
   });
+  $(document).ready(function(){
+    $('.industry__carousel').slick({
+        speed: 1200,
+        adptiveHeght: false,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/industry/arrow_left.png"></img></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/industry/arrow_right.png"></img></button>',
+        Infinity: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              arrows: false,
+              dots: true
+            }
+          }
+        ]
+    });
+  });

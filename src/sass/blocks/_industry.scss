@@ -1,0 +1,76 @@
+.industry {
+    height: 889px;
+    padding-top: 79px;
+    padding-bottom: 61px;
+    background: url(../img/industry/bg/bg_industry.jpg) center center / cover no-repeat;
+    &__title {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35.99px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__wrapper {
+        display: flex;
+        padding: 0 32px;
+        width: 843px;
+        height: 65px;
+        border: 1px solid #ffffff;
+        margin: 0 auto;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 35px;
+    }
+    &__menu {
+        display: flex;
+        height: 49px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 49px;
+            text-align: center;
+            border-right: 1px solid #7f8382;
+            padding-right: 25px;
+            cursor: pointer;
+            &:hover {
+                color: #03c0ec;
+            }
+            &:nth-of-type(6) {
+                border: none;
+            }
+        }
+    }
+    &__carousel {
+        position: relative;
+        width: 947px;
+        margin: 0 auto;
+        div {
+            width: 947px;
+        }
+        .slick-prev, .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .slick-prev {
+            left: -29px;
+        }
+        .slick-next {
+            right: -29px;
+        }
+        .slick-list {
+            overflow: hidden;
+            .slick-track {
+                display: flex;
+        }   }
+    }
+}
